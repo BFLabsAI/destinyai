@@ -9,6 +9,9 @@ resultado de uma engenharia reversa completa e testada (login por sessão de
 cookie, geração/extensão de vídeo, polling, download). Detalhes técnicos
 completos ficam na skill instalada (`SKILL.md` + `references/`).
 
+Ver [`CHANGELOG.md`](./CHANGELOG.md) pro histórico de versões e limitações
+conhecidas.
+
 ## Uso
 
 ```bash
