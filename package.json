@@ -1,0 +1,31 @@
+{
+  "name": "destinyai",
+  "version": "0.1.0",
+  "description": "Instala sessao (cookie), credenciais e a skill de API da Destiny (DestinyGen AI) para agentes de IA (Claude Code, etc.)",
+  "type": "module",
+  "license": "MIT",
+  "bin": {
+    "destinyai": "./dist/index.js"
+  },
+  "files": [
+    "dist",
+    "skill-payload"
+  ],
+  "engines": {
+    "node": ">=22.5.0"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json && node -e \"require('node:fs').chmodSync('dist/index.js', 0o755)\"",
+    "dev": "tsx src/index.ts",
+    "start": "node dist/index.js",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "@clack/prompts": "^0.8.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}
