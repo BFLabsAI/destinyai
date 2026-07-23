@@ -1,6 +1,6 @@
 {
   "name": "destinyai",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Instala sessao (cookie), credenciais e a skill de API da Destiny (DestinyGen AI) para agentes de IA (Claude Code, etc.)",
   "type": "module",
   "license": "MIT",
@@ -12,7 +12,7 @@
     "skill-payload"
   ],
   "engines": {
-    "node": ">=22.5.0"
+    "node": ">=18"
   },
   "scripts": {
     "build": "tsc -p tsconfig.json && node -e \"require('node:fs').chmodSync('dist/index.js', 0o755)\"",
